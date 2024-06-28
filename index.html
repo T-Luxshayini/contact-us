@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+        <button id="contactUsBtn">Contact Us</button>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Let's Get in Touch</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" >
+                <span class="error" id="nameError"></span>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+                <span class="error" id="addressError"></span>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+                <span class="error" id="phoneError"></span>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <span class="error" id="emailError"></span>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <span class="error" id="messageError"></span>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
